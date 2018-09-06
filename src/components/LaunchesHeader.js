@@ -38,7 +38,7 @@ Launches
             disabled={isLoading}
             onClick={getLaunches}
           >
-            <Icon className="launch-refresh-icon" type="redo" />
+            {!isLoading && <Icon className="launch-refresh-icon" type="redo" />}
           </Button>
         </Tooltip>
       </Col>
