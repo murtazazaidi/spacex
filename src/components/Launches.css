@@ -1,0 +1,60 @@
+.launch-header {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.launch-header h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.launch-table {
+  background-color: #fff;
+	padding: 2rem;
+	min-height: 80vh;
+}
+
+.launch-card {
+	margin: 10px auto;
+	min-height: 250px;
+	box-shadow: 0 4px 8px 0 rgba(120, 120, 120, 0.2), 0 6px 20px 0 rgba(120, 120, 120, 0.19);
+	border-radius: 6px;
+}
+
+.ant-card-head {
+	border-radius: 6px 6px 0 0;
+}
+
+.launch-search {
+	margin: 0px 16px 24px 0px;
+}
+
+.launch-refresh-icon {
+	transform: rotate(270deg);
+}
+
+.ant-input-group-sm .ant-input, .ant-input-group-sm > .ant-input-group-addon {
+	padding: 4px 11px;
+	height: 32px;
+}
+
+@media only screen and (max-width: 767px) {}
+
+
+@media only screen and (max-width: 467px) {
+	.launch-header h2 {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+
+	.launch-header .ant-btn-circle.ant-btn-lg, .ant-btn-circle-outline.ant-btn-lg {
+		height: 30px;
+		width: 30px;
+	}
+
+  .launch-table {
+		background-color: #fff;
+		padding: 1rem;
+		min-height: 82vh;
+	}
+}

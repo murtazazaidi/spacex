@@ -1,0 +1,99 @@
+a {
+  cursor: pointer;
+}
+
+.app-layout {
+  height: 100vh;
+}
+
+.app-header {
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  text-transform: uppercase
+}
+
+.app-header .logo {
+  width: 230px;
+  height: 31px;
+  background-image: url('../logo.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin: 16px 8px 16px 48px;
+  float: left;
+}
+
+.app-menu {
+  line-height: 64px;
+}
+
+.app-content {
+  background-color: #f0f2f5;
+  margin-top: 4rem;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 0.8rem;
+  color: #ccac55;
+}
+
+.app-footer span {
+  float: right;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item.ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item.ant-menu-item-selected {
+  color: #ccac55;
+  background: transparent;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item :hover {
+  border-bottom: 2px solid #ccac55;
+  padding-bottom: 2px;
+}
+
+
+@media only screen and (max-width: 767px) {}
+
+
+@media only screen and (max-width: 467px) {
+  .app-header .logo {
+    width: 100px;
+    background-image: url('../logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 16px 0px 0px 12px;
+    float: left;
+  }
+
+  .app-menu {
+    line-height: 48px;
+  }
+
+  .app-content {
+    margin-top: 3rem;
+  }
+
+  .app-footer span {
+    display: none;
+  }
+
+  .ant-layout-header {
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item {
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 0 12px;
+  }
+}
