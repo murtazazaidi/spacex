@@ -19,6 +19,7 @@ const status = {
 };
 
 const messages = {
+  ERROR_TITLE: 'Loading Error',
   PAST_FAIL: 'Failed to load past launches',
   UPCOMING_FAIL: 'Failed to load upcoming launches',
 };
@@ -33,6 +34,7 @@ export const getPastLaunches = () => (dispatch) => {
         dispatch(getPastLaunchesSuccess(launchesNormalized));
       } else {
         notification.error({
+          message: messages.ERROR_TITLE,
           description: messages.PAST_FAIL,
         });
         dispatch(getPastLaunchesFailure());
@@ -40,6 +42,7 @@ export const getPastLaunches = () => (dispatch) => {
     })
     .catch(() => {
       notification.error({
+        message: messages.ERROR_TITLE,
         description: messages.PAST_FAIL,
       });
       dispatch(getPastLaunchesFailure());
@@ -56,6 +59,7 @@ export const getUpcomingLaunches = () => (dispatch) => {
         dispatch(getUpcomingLaunchesSuccess(launchesNormalized));
       } else {
         notification.error({
+          message: messages.ERROR_TITLE,
           description: messages.UPCOMING_FAIL,
         });
         dispatch(getUpcomingLaunchesFailure());
@@ -63,6 +67,7 @@ export const getUpcomingLaunches = () => (dispatch) => {
     })
     .catch(() => {
       notification.error({
+        message: messages.ERROR_TITLE,
         description: messages.UPCOMING_FAIL,
       });
       dispatch(getUpcomingLaunchesFailure());

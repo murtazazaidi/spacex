@@ -5,6 +5,7 @@ module.exports = function override(config, env) {
   // To modify Antd theme
   config = injectBabelPlugin(['import', { libraryName: 'antd', style: true }], config);  // change importing css to less
   config = rewireLess.withLoaderOptions({
+    javascriptEnabled: true,
     modifyVars: {
       "@primary-color": "#ccac55",
       "@heading-color": "@primary-color",
