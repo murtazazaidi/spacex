@@ -2,23 +2,25 @@
   "name": "spacex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://murtazazaidi.github.io/spacex",
   "dependencies": {
-    "antd": "^3.9.0",
-    "axios": "^0.17.1",
-    "crypto-js": "^3.1.9-1",
-    "eslint": "^5.4.0",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.2",
-    "prop-types": "^15.6.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-ga": "^2.4.1",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
+    "antd": "3.9.0",
+    "axios": "0.17.1",
+    "crypto-js": "3.1.9-1",
+    "eslint": "5.4.0",
+    "gh-pages": "^2.0.1",
+    "lodash": "4.17.10",
+    "moment": "2.22.2",
+    "prop-types": "15.6.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-ga": "2.4.1",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
     "react-scripts": "1.1.0",
-    "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.2.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -26,15 +28,17 @@
     "test": "react-app-rewired test --env=jsdom",
     "lint": "eslint src --ext .js --ext .jsx --no-cache --quiet",
     "lintfix": "eslint src --ext .js --ext .jsx --no-cache --fix",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-import": "1.6.3",
     "eslint-config-airbnb": "17.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
     "react-app-rewire-less": "2.1.0",
-    "react-app-rewired": "^1.4.1"
+    "react-app-rewired": "1.4.1"
   }
 }
